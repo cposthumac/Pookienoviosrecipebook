@@ -32,6 +32,17 @@ header .description {
     color: #ddd;
 }
 
+/* Styling for the image */
+.recipe-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 800px; /* Limits the max width of the image */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 20px 0; /* Adds spacing above and below the image */
+    display: block; /* Makes the image a block-level element to center it */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image */
+}
+
 .recipe-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
