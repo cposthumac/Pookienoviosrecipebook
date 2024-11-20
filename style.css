@@ -7,70 +7,83 @@
 
 /* Basic styling for the body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  padding: 0 20px;
 }
 
 /* Header styling */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
   text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 3em;
 }
 
-/* Navigation styling */
-nav ul {
+/* Description text styling */
+.description {
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Recipe list styling */
+.recipes {
+  margin-top: 30px;
+}
+
+.recipes h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.recipes ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Main section styling */
-main {
-  padding: 20px;
   text-align: center;
 }
 
-main h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.recipes ul li {
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
-main p {
-  font-size: 1.2em;
-  color: #555;
+.recipes ul li a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.recipes ul li a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.recipes ul li strong {
+  font-weight: bold;
 }
 
 /* Footer styling */
 footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 10px;
   position: fixed;
   width: 100%;
   bottom: 0;
+  border-radius: 5px;
 }
 
 footer p {
