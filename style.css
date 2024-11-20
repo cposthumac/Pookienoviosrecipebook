@@ -1,91 +1,95 @@
-/* Reset some default styling */
+/* Global styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Basic styling for the body */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  padding: 0 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
-/* Header styling */
 header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 3em;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* Description text styling */
-.description {
-  font-size: 1.2em;
-  color: #555;
-  text-align: center;
-  margin-bottom: 30px;
-  font-style: italic;
+header .description {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: #ddd;
 }
 
-/* Recipe list styling */
-.recipes {
-  margin-top: 30px;
+.recipe-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.recipes h2 {
-  font-size: 2em;
-  text-align: center;
-  color: #333;
-  margin-bottom: 15px;
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.recipes ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
+.recipe-card:hover {
+    transform: translateY(-10px);
 }
 
-.recipes ul li {
-  font-size: 1.5em;
-  margin: 10px 0;
+.recipe-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
 }
 
-.recipes ul li a {
-  text-decoration: none;
-  color: #4CAF50;
+.recipe-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-.recipes ul li a:hover {
-  text-decoration: underline;
-  color: #333;
+.recipe-card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.recipes ul li strong {
-  font-weight: bold;
+.recipe-card a:hover {
+    background-color: #45a049;
 }
 
-/* Footer styling */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-  font-size: 1em;
+    font-size: 0.9rem;
 }
